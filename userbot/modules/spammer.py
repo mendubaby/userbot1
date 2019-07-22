@@ -56,7 +56,7 @@ async def bigspam(e):
                 "Bigspam was executed successfully"
                 )
 
-@register(outgoing=True, pattern="^.noob$")
+@register(outgoing=True, pattern="^.noob")
 async def whoizme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("EVERyBOdy")
